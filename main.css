@@ -1,0 +1,307 @@
+/* Modifications of Bootstrap elements */
+
+div.checkbox {
+    display: inline-block;
+}
+
+div.dropdown {
+    display: inline-block;
+}
+
+div.progress {
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 2px;
+}
+
+div.progress-bar {
+    background-color: rgb(130, 195, 31) !important;
+}
+
+div.checkbox label input {
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+/* My own styles */
+
+body {
+    padding-top: 32px;
+    background-color: rgb(250, 250, 250);
+}
+
+#main-container {
+    min-width: 1320px;
+}
+
+#summary-row {
+    margin-left: 0;
+    margin-bottom: 14px;
+}
+
+#page-heading, #credits-remain {
+    display: inline-block;
+}
+
+#page-heading {
+    font-size: 130%;
+    font-weight: 600;
+}
+
+#credits-remain {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
+
+#credits-remain-num {
+    background-color: rgb(210, 56, 89);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+#credits-remain-txt {
+    font-size: 85%;
+    color: rgb(112, 112, 112);
+}
+
+#credit-progress-bar {
+    width: 264px;
+    float: right;
+}
+
+#credit-tally {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 85%;
+    color: rgb(112, 112, 112);
+    vertical-align: middle;
+}
+
+#credit-tally span.main-txt {
+    color: rgb(68, 130, 13);
+    font-weight: 600;
+}
+
+#apply-filters-row {
+    background-color: rgb(241, 241, 241);
+    margin: 0;
+    padding: 8px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 6px;
+    font-size: 85%;
+    color: rgb(114, 114, 114);
+}
+
+#drop-down {
+    position: relative;
+    margin: 0 16px;
+}
+
+#drop-down-btn {
+    width: 300px;
+    height: 32px;
+    text-align: left;
+    font-size: 100%;
+    color: rgb(114, 114, 114);
+    padding: 4px 16px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(224, 224, 224);
+}
+
+#drop-down-btn::after {
+    position: absolute;
+    vertical-align: middle;
+    right: 16px;
+    top: 14px;
+}
+
+#years-row {
+    margin: 16px 0;
+}
+
+div.col.active-year, div.col.inactive-year {
+    margin-right: 8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+div.col.active-year {
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 7px;
+}
+
+div.col.active-year div.year-heading {
+    background-color: rgb(241, 241, 241);
+}
+
+div.year-heading {
+    padding: 12px 10px 4px;
+}
+
+div.year-heading span.year-title {
+    display: block;
+    color: rgb(64, 64, 64);
+    font-size: 110%;
+    font-weight: 600;
+}
+
+div.year-heading span.credits-planned {
+    display: block;
+    font-size: 90%;
+    color: rgb(146, 146, 146);
+}
+
+div.container.classes-col {
+    margin: 4px 0 0;
+    padding: 0;
+}
+
+div.row.class-available, div.row.class-chosen, div.row.class-required {
+    position: relative;
+    height: 52px;
+    margin: 4px 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px 8px 20px;
+    font-size: 87%;
+}
+
+div.row.class-chosen {
+    border: 1px solid rgb(196, 196, 196);
+}
+
+div.row.class-chosen.has-note {
+    cursor: pointer;
+}
+
+div.row.class-chosen div.aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(130, 195, 31);
+    width: 8px;
+    height: 100%;
+}
+
+div.row.class-required {
+    border: 1px solid rgb(196, 196, 196);
+    padding-left: 54px;
+}
+
+div.row.class-required div.aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(38, 175, 223);
+    width: 42px;
+    height: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+div.row.class-required div.aside div {
+    padding: 4px 0;
+    vertical-align: middle;
+    font-size: 200%;
+}
+
+div.row.class-available {
+    border: 1px dashed rgb(232, 232, 232);
+    color: rgb(196, 196, 196);
+    padding: 14px 20px;
+}
+
+div.row.class-chosen div.course-name {
+    display: block;
+    width: 100%;
+    color: rgb(64, 64, 64);
+    font-size: 90%;
+}
+
+div.row.class-chosen div.course-code {
+    color: rgb(64, 64, 64);
+    font-size: 80%;
+    padding-right: 10px;
+}
+
+div.row.class-chosen span.divider {
+    margin: auto 0;
+    height: 12px;
+    width: 1px;
+    background-color: rgb(174, 174, 174);
+}
+
+div.row.class-chosen div.course-req {
+    color: rgb(174, 174, 174);
+    font-size: 80%;
+    padding-left: 10px;
+}
+
+div.row.class-chosen div.course-credit {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    color: rgb(174, 174, 174);
+    font-size: 85%;
+}
+
+div.row.class-chosen div.course-important-note {
+    display: none;
+}
+
+div.row.class-chosen.has-note div.course-important-note {
+    display: inline;
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    color: rgb(255, 255, 255);
+    font-size: 70%;
+    font-weight: 600;
+    background-color: rgb(210, 56, 89);
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 100%;
+    padding: 0px 6px;
+}
+
+div.row.class-required div.course-req {
+    display: block;
+    width: 100%;
+    color: rgb(2, 127, 178);
+    font-size: 90%;
+}
+
+div.row.class-required div.course-credit {
+    display: block;
+    width: 100%;
+    color: rgb(174, 174, 174);
+    font-size: 85%;
+}
+
+div.row.submit-btn {
+    background-color: rgb(38, 175, 223);
+}
+
+div.btn-container {
+    display: inline-block;
+    margin: 24px auto;
+    border: 1px solid rgb(2, 123, 175);
+    border-radius: 5px;
+    padding: 1px;
+}
+
+#ready-submit-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 123, 175);
+    padding: 8px 16px;
+}
+
+#ready-submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(2, 112, 155);
+}

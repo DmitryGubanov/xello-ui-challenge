@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Planner</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dmitry Gubanov" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div id="main-container" class="container">
+        <div id="summary-row" class="row">
+            <div class="col">
+                <div id="page-heading">High-School Diploma 2017</div>
+                <div id="credits-remain">
+                    <span id="credits-remain-num" class="badge badge-pill badge-primary">14</span>
+                    <span id="credits-remain-txt">Credits Left!</span>
+                </div>
+            </div>
+            <div class="col">
+                <div id="credit-progress-bar">
+                    <div class="progress" style="display:inline-block; width: 200px">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 47%; height: 100%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="30"></div>
+                    </div>
+                    <div id="credit-tally"><span class="main-txt">14</span> / 30</div>
+                </div>
+            </div>
+        </div>
+        <div id="apply-filters-row" class="row">
+            <div class="col">
+                Requirements
+                <div id="drop-down" class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="drop-down-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Show All
+                    </button>
+                </div>
+                Credits
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">All</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Earned</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Planned</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Remaining</label>
+                </div>
+            </div>
+        </div>
+        <div id="years-row" class="row">
+            <div class="col active-year">
+                <div class="year-heading">
+                    <span class="year-title">YEAR 9 (next year)</span>
+                    <span class="credits-planned">1 credit planned</span>
+                </div>
+                <div class="container classes-col">
+                    <div class="row class-chosen">
+                        <div class="aside"></div>
+                        <div class="course-name">English</div>
+                        <div class="course-code">ENG1PI</div>
+                        <span class="divider"></span>
+                        <div class="course-req">English 9</div>
+                        <div class="course-credit">1 cr.</div>
+                        <div class="course-important-note">!</div>
+                    </div>
+                    <div class="row class-chosen has-note">
+                        <div class="aside"></div>
+                        <div class="course-name">Functions</div>
+                        <div class="course-code">MAT1UI</div>
+                        <span class="divider"></span>
+                        <div class="course-req">Math 9</div>
+                        <div class="course-credit">1 cr.</div>
+                        <div class="course-important-note">!</div>
+                    </div>
+                    <div class="row class-required">
+                        <div class="aside"><div>+</div></div>
+                        <div class="course-req">Add Science 9</div>
+                        <div class="course-credit">1 cr.</div>
+                    </div>
+                    <div class="row  class-required">
+                        <div class="aside"><div>+</div></div>
+                        <div class="course-req">Add Geography</div>
+                        <div class="course-credit">1 cr.</div>
+                    </div>
+                    <div class="row class-required">
+                        <div class="aside"><div>+</div></div>
+                        <div class="course-req">Add French</div>
+                        <div class="course-credit">1 cr.</div>
+                    </div>
+                    <div class="row class-required">
+                        <div class="aside"><div>+</div></div>
+                        <div class="course-req">Add Elective</div>
+                        <div class="course-credit">16 credits remaining</div>
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row submit-btn">
+                        <div class="btn-container">
+                            <button id="ready-submit-btn" type="button" class="btn">Ready To Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col inactive-year">
+                <div class="year-heading">
+                    <span class="year-title">YEAR 10</span>
+                    <span class="credits-planned">0 credits earned</span>
+                </div>
+                <div class="container classes-col">
+                    <div class="row  class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                </div>
+            </div>
+            <div class="col inactive-year">
+                <div class="year-heading">
+                    <span class="year-title">YEAR 11</span>
+                    <span class="credits-planned">0 credits earned</span>
+                </div>
+                <div class="container classes-col">
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                </div>
+            </div>
+            <div class="col inactive-year">
+                <div class="year-heading">
+                    <span class="year-title">YEAR 12</span>
+                    <span class="credits-planned">0 credits earned</span>
+                </div>
+                <div class="container classes-col">
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                    <div class="row class-available">
+                        Available Slot
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -28,6 +28,10 @@ div.checkbox label input {
 
 /* My own styles */
 
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
 body {
     padding-top: 32px;
     background-color: rgb(250, 250, 250);
